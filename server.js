@@ -48,4 +48,4 @@ app.put('/userinfo/:id', async (req, res) => {
 })
 
 
-app.listen(3001, () => console.log("server started on port 30001"));
+app.listen(process.env.PORT || 3001, () => console.log("server started on port 30001"));
