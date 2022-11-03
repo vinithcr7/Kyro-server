@@ -6,6 +6,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
+require('dotenv').config();
 
 mongoose.connect("mongodb+srv://vinith:rQtzwdBdZHnceiEG@cluster0.b4upvcl.mongodb.net/kyro?retryWrites=true&w=majority", {
     useNewUrlParser: true,
